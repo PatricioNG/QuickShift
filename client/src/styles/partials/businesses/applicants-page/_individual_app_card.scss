@@ -1,0 +1,68 @@
+.individual-applicant-card{
+    margin: 16px 2.5%;
+    width: 95%;
+    height: 425px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+    padding: 20px 0;
+    background-color: #FAFAFA;
+
+    &__heading{
+        text-align: center;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    &__profile-wrapper{
+        width: 100%;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__details-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__content-text{
+        margin: 8px 0;
+        text-align: center;
+
+        &--callout{
+            width: 90%;
+            margin-top: 0;
+            border-radius: 20px;
+            height: 6.2rem;
+            padding: 10px;
+            overflow: scroll;
+            background-color: white;
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+            color: #000000
+        }
+    }
+
+    &__action-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 8px 0;
+    }
+
+    &__action-button{
+        width: 30%;
+        height: 2rem;
+        border-radius: 20px;
+        border: none;
+        box-shadow: 0px 4px 5px rgba(0,0,0,0.3);
+        background-color: rgba($primary-color, 0.9);
+        color: #FFFFFF;
+
+        &:first-child{
+            background-color: rgba(#8D0E02, 0.9);
+            color: #FFFFFF;
+        }
+    }
+
+}

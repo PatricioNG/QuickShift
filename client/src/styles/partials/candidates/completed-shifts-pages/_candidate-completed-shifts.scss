@@ -1,0 +1,38 @@
+.candidate-completed-shifts{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__heading{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        font-weight: 500;
+        color: #003E19;
+        margin: 20px 0;
+        padding: 8px 20px;
+        font-size: 1.8rem;
+
+    }
+
+    &__shift-list{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    &__no-shifts{
+        width: 100%;
+        border-top: 1px solid $secondary-color;
+        list-style-type: none;
+    }
+
+    &__no-shifts-heading{
+        padding: 20px 0;
+        font-weight: 300;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}

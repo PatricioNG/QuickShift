@@ -1,0 +1,75 @@
+.new-shift-form{
+    width: 90%;
+    padding: 20px 0;
+
+    &__section-header{
+        margin: 0 0 16px 0;
+        width: 100%;
+        font-weight: 300;
+        
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        
+        &:nth-child(2){
+            padding-bottom: 16px;
+        }
+
+        &--bottom{
+            border-top: 1px solid #003e19;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    &__label{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 16px;
+    }
+
+    &__input{
+        width: 100%;
+        font-family: 'Lato';
+        margin: 12px 0 8px 0;
+        height: 2rem;
+        border-radius: 20px;
+        border: 1px solid #003e19;
+        padding: 8px 16px;
+        outline: none;
+        background-color: #FFFFFF;
+
+        &--text-area{
+            resize: none;
+            height: 7rem;
+        }
+    }
+
+    &__time-picker{
+        width: 100%;
+        margin: 12px 0 8px 0;
+
+        .rc-time-picker-input{
+            outline: none;
+            padding: 0 16px;
+            border: 1px solid #003e19;
+            border-radius: 20px;
+            height: 2rem;
+        }
+    }
+
+    &__submit-button{
+        width: 70%;
+        height: 2.5rem;
+        border: none;
+        background-color: rgba(#028c6a, 0.9);
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+        border-radius: 20px;
+        color: #FFFFFF;
+        font-weight: 600;
+        outline: none;
+    }
+}

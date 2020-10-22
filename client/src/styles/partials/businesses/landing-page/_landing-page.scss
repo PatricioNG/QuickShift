@@ -1,0 +1,111 @@
+.businesses-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+
+    &__page-heading{
+        margin: 0 0 16px 0;
+        width: 90%;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: #003e19;
+        text-align: center;
+    }
+
+    &__shift-chart-wrapper{
+        padding: 16px 0;
+        width: 90%;
+    }
+
+    &__chart-message{
+        font-weight: 400;
+        text-align: center;
+        color: #003e19;
+        margin-bottom: 0;
+    }
+
+    &__applicants{
+        width: 90%;
+        padding: 16px 0;
+    }
+
+    &__subheader{
+        font-weight: 400;
+        color: #003e19;
+        margin: 0;
+    }
+
+    &__applicants-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+        
+        &::after{
+            position: absolute;
+            content: '';
+            display: block;
+            height: 40%;
+            width: 1px;
+            background-color: #028c6a;
+        }
+    }
+
+    &__applicants-callout{
+        width: 40%;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__applicants-data{
+        margin: 0;
+        text-align: center;
+        height: fit-content;
+        font-size: 2.5rem;
+        color: #028c6a;
+        text-shadow: 0px 1px 4px rgba(0,0,0,0.3);
+    }
+
+    &__applicants-legend{
+        padding: 0 8px;
+        height: fit-content;
+        margin: 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #028c6a;
+    }
+
+    &__upcoming-shifts{
+        width: 90%;
+    }
+
+    &__upcoming-shifts-list{
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+    }
+
+    &__no-shifts{
+        width: 100%;
+        border-top: 1px solid $secondary-color;
+    }
+
+    &__no-shifts-heading{
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    &__no-historical-shifts{
+        text-align: center;
+        font-weight: 300;
+        font-size: 1.3rem;
+    }
+
+}

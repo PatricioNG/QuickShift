@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "QuickShift server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "createTables": "knex migrate:up 20200901151803__create_users_table.js && knex migrate:up 20200901151810__create_businesses_table.js && knex migrate:up 20200901151716__create_messages_table.js && knex migrate:up 20200901151830__create_shifts_table.js && knex migrate:up 20200901151824__create_applicants_table.js",
+    "dropTables": "knex migrate:down 20200901151803__create_users_table.js && knex migrate:down 20200901151810__create_businesses_table.js && knex migrate:down 20200901151716__create_messages_table.js && knex migrate:down 20200901151830__create_shifts_table.js && knex migrate:down 20200901151824__create_applicants_table.js",
+    "backend": "nodemon server"
+  },
+  "author": "Patricio Nikolas Guerra",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^2.7.1",
+    "bookshelf": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "express-jwt": "^6.0.0",
+    "express-jwt-authz": "^2.4.1",
+    "graphql": "^15.3.0",
+    "graphql-iso-date": "^3.6.1",
+    "https-proxy-agent": "^5.0.0",
+    "jsrsasign": "^10.0.0",
+    "jwks-rsa": "^1.10.0",
+    "knex": "^0.21.5",
+    "mysql": "^2.18.1"
+  },
+  "dev dependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.7.1"
+  }
+}

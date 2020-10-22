@@ -1,0 +1,22 @@
+.user-shifts-home{
+
+    &__heading{
+
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: #003E19;
+        padding: 8px 0;
+        margin: 20px;
+        font-size: 1.8rem;
+    }
+
+    &__calendar-container{
+        padding: 0 20px;
+    }
+
+    &__calendar{
+        height: 60vh;
+        min-height: 400px;
+    }
+}

@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-ExtraBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-ExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Light.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-MediumItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-SemiBoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Thin.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-ThinItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-SemiBold.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-Black.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../assets/fonts/Raleway-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Raleway-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-BoldItalic.woff2') format('woff2'),
+        url('../assets/fonts/Lato-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Light.woff2') format('woff2'),
+        url('../assets/fonts/Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-Black.woff2') format('woff2'),
+        url('../assets/fonts/Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-LightItalic.woff2') format('woff2'),
+        url('../assets/fonts/Lato-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../assets/fonts/Lato-BlackItalic.woff2') format('woff2'),
+        url('../assets/fonts/Lato-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+

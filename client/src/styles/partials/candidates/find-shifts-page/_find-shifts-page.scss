@@ -1,0 +1,112 @@
+.candidates-find-shift{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__heading-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+    }
+
+    &__heading{
+        width: 70%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 16px 0;
+        font-weight: 500;
+        color: #003E19;
+            margin-bottom: 0;
+
+        &--back{
+            margin-top: 8px;
+        }
+    }
+
+    &__pending-app-link{
+        width: 30%;
+        height: fit-content;
+    }
+
+    &__pending-app-button{
+        border-radius: 40px;
+        border: none;
+        padding: 8px 0;
+        height: 50px;
+        background: none;
+        padding-right: 10px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 18px;
+    }
+
+    &__back-button{
+        border-radius: 40px;
+        border: none;
+        padding: 4px 0;
+        height: 50px;
+        padding: 10px;
+        background: none;
+        font-size: 0.8rem;
+        font-weight: bold;
+        position: relative;
+        margin-top: 18px;
+
+    }
+
+    &__pending-app-arrow{
+        position: absolute;
+        top: 17.5px;
+        svg{
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__back-arrow{
+        position: absolute;
+        top: 17.5px;
+        left: 5px;
+        svg{
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    &__shift-list{
+        width: 90%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    &__no-shifts{
+        width: 100%;
+        border-top: 1px solid $secondary-color;
+    }
+
+    &__no-shifts-heading{
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    &__no-applications{
+        width: 100%;
+        border-top: 1px solid $secondary-color;
+    }
+
+    &__no-applications-heading{
+        font-size: 1.3rem;
+        font-weight: 300;
+        text-align: center;
+    }
+
+}

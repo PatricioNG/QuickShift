@@ -1,0 +1,169 @@
+.completed-shift-details{
+    width: 100%;
+
+    &__header{
+        padding: 0 20px;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__back-button{
+        background: none;
+        height: 40px;
+        width: 40px;
+        border: none;
+        outline: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__back-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__heading{
+        font-weight: 500;
+        color: #003E19;
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    &__details-wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &__section-wrapper{
+        width: 90%;
+        display: flex;
+        margin-bottom: 16px;
+
+        &--top{
+            padding: 0 10px;
+        }
+
+        &--center{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        &--border-top{
+            border-top: 1px solid #003E19;
+            padding-top: 16px;
+        }
+
+        &--border-bottom{
+            padding-bottom: 16px;
+            border-bottom: 1px solid #003E19;
+        }
+    }
+
+    &__subsection-wrapper{
+        width: 100%;
+    }
+
+    &__title-wrapper{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__section-heading{
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 0 8px 0;
+        width: 100%;
+        text-align: center;
+
+        &--small{
+            font-size: 1rem;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__subsection-heading{
+        width: 100%;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0 0 8px 0;
+        text-align: center;
+    }
+
+    &__role{
+     width: 100%;
+     margin: 0 0 8px 0;
+     font-size: 1.8rem;
+     text-align: center;   
+    }
+
+    &__business-name{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__role-rate{
+        color: #028C6A;
+        margin: 0;
+    }
+
+    &__earnings-call-out{
+        background-color: rgba(#028C6A, 0.9);
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        height: 5rem;
+        padding: 0 48px;
+        border-radius: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+    }
+
+    &__earnings{
+        text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        font-size: 3rem;
+        font-weight: 300;
+        color: #FFFFFF;
+    }
+
+    &__date{
+        width: 50%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__time-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 50%;
+        border-left: 1px solid #003E19;
+    }
+
+    &__start-end-time{
+        margin: 0 0 8px 0;
+    }
+
+    &__location-map{
+        margin-top: 8px;
+        width: 100%;
+        height: 12rem;
+        border-radius: 20px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    }
+
+
+    
+}

@@ -1,0 +1,57 @@
+.candidates-upcoming-shift{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 8px 20px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    &__heading{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        color: #003E19;
+        margin: 0;
+        font-size: 1.8rem;
+    }
+    &__back-button{
+        background: none;
+        border: none;
+        outline: none;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__back-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__shift-list{
+        margin: 0;
+        padding: 0;
+        width: 90%;
+    }
+
+    &__no-shifts{
+        list-style-type: none;
+        width: 100%;
+        border-top: 1px solid $secondary-color;
+    }
+
+    &__no-shift-header{
+        font-weight: 300;
+        padding: 30px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

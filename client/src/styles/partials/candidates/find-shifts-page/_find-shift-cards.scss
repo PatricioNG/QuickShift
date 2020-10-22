@@ -1,0 +1,107 @@
+.shift-card{
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeInFloatUp 0.3s;
+    
+
+    &__business-header{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__business-wrapper{
+        padding: 20px 0;
+        margin-left: 20px;
+        width: calc(100% - 120px);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-left: 1px solid #003E19;
+    }
+    &__shift-role{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    &__business-name{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &__date-info{
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    &__shift-time{
+        margin: 0;
+        font-weight: 300;
+    }
+    &__shift-date{
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__location-info{
+        width: 50%;
+        padding: 20px 0;
+    }
+
+    &__street{
+        margin:0;
+        font-weight: 300;
+    }
+
+    &__postal{
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__actions{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__apply{
+        height: 40px;
+        border-radius: 20px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #028c6A;
+        color: #FFFFFF;
+        font-weight: 700;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+
+        &:hover{
+        background-color: rgba(#028c6A, 0.80);
+
+        }
+    }
+
+    &__info{
+        height: 40px;
+        border-radius: 20px;
+        padding: 8px 16px;
+        border: none;
+        background-color: #FAFAFA;
+        color: #003E19;
+        font-weight: 700;
+        box-shadow: 0px 2px 5px rgba(#003E19,0.3);
+
+        &:hover{
+            background-color: rgba(#003E19, 0.10);
+
+        }
+    }
+
+}

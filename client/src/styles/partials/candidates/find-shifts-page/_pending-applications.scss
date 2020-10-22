@@ -1,0 +1,61 @@
+.application-card{
+    width: 100%;
+    padding: 16px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    animation: fadeInFloatUp 0.3s;
+
+
+    &__section-wrapper{
+        display: flex;
+        justify-content: center;
+
+        &--full{
+            width: 100%;
+            flex-wrap: wrap;
+        }
+        &--half{
+            width: 50%;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 16px 0;
+        }
+    }
+
+    &__content-text{
+        margin: 0;
+        font-weight: 300;
+
+        &--callout{
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    &__business-wrapper{
+        flex-grow: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        border-left: 1px solid $secondary-color;
+        margin-left: 20px;
+    }
+
+    &__shift-role{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    &__business-name{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+}

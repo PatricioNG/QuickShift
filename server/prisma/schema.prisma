@@ -1,0 +1,94 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model applications {
+  id                  Int       @default(autoincrement()) @id
+  user_id             Int?
+  shift_id            Int?
+  applied_on          DateTime? @default(now())
+  application_message String?
+  accepted            Boolean?  @default(false)
+  reviewed            Boolean?  @default(false)
+  shifts              shifts?   @relation(fields: [shift_id], references: [id])
+  users               users?    @relation(fields: [user_id], references: [id])
+
+  @@index([shift_id], name: "applications_shift_id_foreign")
+  @@index([user_id], name: "applications_user_id_foreign")
+}
+
+model businesses {
+  id             Int        @default(autoincrement()) @id
+  name           String
+  type           String?
+  business_email String     @unique
+  street_address String?
+  postal_code    String?
+  city           String?
+  province       String?
+  country        String?
+  logo_link      String?
+  messages       messages[]
+  shifts         shifts[]
+}
+
+model knex_migrations {
+  id             Int       @default(autoincrement()) @id
+  name           String?
+  batch          Int?
+  migration_time DateTime?
+}
+
+model knex_migrations_lock {
+  index     Int  @default(autoincrement()) @id
+  is_locked Int?
+}
+
+model messages {
+  id                     Int         @default(autoincrement()) @id
+  user_id                Int?
+  business_id            Int?
+  destination            String
+  message                String
+  message_sent           DateTime    @default(now())
+  message_read           Boolean     @default(false)
+  message_read_time      DateTime?
+  is_system_notification Boolean
+  businesses             businesses? @relation(fields: [business_id], references: [id])
+  users                  users?      @relation(fields: [user_id], references: [id])
+
+  @@index([business_id], name: "messages_business_id_foreign")
+  @@index([user_id], name: "messages_user_id_foreign")
+}
+
+model shifts {
+  id           Int            @default(autoincrement()) @id
+  business_id  Int
+  start_time   DateTime
+  end_time     DateTime
+  role         String
+  rate         Float
+  posting_fee  Float          @default(2.99)
+  pending      Boolean        @default(true)
+  businesses   businesses     @relation(fields: [business_id], references: [id])
+  applications applications[]
+
+  @@index([business_id], name: "shifts_business_id_foreign")
+}
+
+model users {
+  id                 Int            @default(autoincrement()) @id
+  first_name         String
+  last_name          String
+  email              String         @unique
+  registration_date  DateTime?      @default(now())
+  profile_image_link String?
+  new_user           Boolean        @default(true)
+  applications       applications[]
+  messages           messages[]
+}

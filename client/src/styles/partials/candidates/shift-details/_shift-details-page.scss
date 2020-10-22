@@ -1,0 +1,153 @@
+.shift-details{
+    display: flex;
+    flex-direction: column;
+
+
+    &__main-nav{
+        position: sticky;
+        top: 0;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    &__header{
+        display: flex;
+        align-items: center;
+    }
+
+    &__heading{
+        flex-grow: 1;
+        font-weight: 500;
+        color: $secondary-color;
+    }
+
+    &__back-button{
+        background: none;
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__back-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    &__section-wrapper{
+        display: flex;
+        padding: 16px 20px;
+        position: relative;
+        flex-wrap: wrap;
+
+        &--top{
+            flex-wrap: nowrap;
+            &::before{
+                width: 90%;
+                height: 1px;
+                content: "";
+                display: block;
+                position: absolute;
+                background-color: $primary-color;
+                top: 0;
+                left: 5%;
+            }
+        }
+
+        &--action-button{
+            justify-content: center;
+        }
+    }
+
+
+    &__title-wrapper{
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__section-heading{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        font-weight: 400;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    &__role{
+        margin: 0 0 8px 0;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    &__business-name{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__role-rate{
+        color: $primary-color;
+        margin: 0;
+    }
+
+    &__date{
+        width: 50%;
+        margin: 0;
+
+    }
+    &__time-wrapper{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        border-left: 1px solid $secondary-color;
+        margin-top: 8px;
+    }
+
+    &__date{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__start-end-time{
+        margin: 0;
+        margin-bottom: 8px;
+    }
+
+    &__location-map{
+        margin-top: 8px;
+        width: 100%;
+        height: 12rem;
+        border-radius: 20px;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    }
+
+    &__apply-link{
+        height: 40px;
+        width: 50%;
+    }
+
+    &__apply{
+        height: 100%;
+        width: 100%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+        border-radius: 20px;
+        border: none;
+        background-color: $primary-color;
+        color: #FFFFFF;
+        font-weight: normal;
+        text-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+    }
+
+
+
+}

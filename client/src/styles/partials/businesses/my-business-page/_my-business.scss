@@ -1,0 +1,67 @@
+.my-business{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    
+    &__header-wrapper{
+        width: 100vw;
+        height: 240px;
+        padding: 0 20px;
+        background-color: rgba(#028C6A, 0.9);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 2rem;
+        border-radius: 0 0 50px 50px;
+    }
+
+    &__heading{
+        font-weight: 300;
+        font-size: 0.9rem;
+        color: #FFFFFF;
+        text-transform: uppercase;
+    }
+
+
+    &__business-info-card{
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        flex-direction: column;
+        margin-top: 16px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+        background-color: #FAFAFA;
+    }
+
+    &__business-info-card-heading{
+        font-weight: 400;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 8px 0 30px 0;
+    }
+
+    &__card-section-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    &__card-action-button{
+        width: 80%;
+        height: 2.4rem;
+        border-radius: 20px;
+        border: none;
+        background-color: rgba($primary-color, 0.9);
+        font-weight: bold;
+        color: #FFFFFF;
+        box-shadow: 0px 4px 7px rgba(0,0,0,0.6);
+        &:hover{
+            background-color: rgba($secondary-color, 0.9);
+        }
+    }
+
+}

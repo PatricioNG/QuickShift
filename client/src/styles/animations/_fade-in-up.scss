@@ -1,0 +1,22 @@
+@keyframes fadeInFloatUp{
+    0%{
+        transform: translateY(4%);
+        opacity: 0;
+    }
+    25%{
+        transform: translateY(3%);
+        opacity: 0.25;
+    }
+    50%{
+        transform: translateY(2%);
+        opacity: 0.5;
+    }
+    75%{
+        transform: translateY(1%);
+        opacity: 0.75;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

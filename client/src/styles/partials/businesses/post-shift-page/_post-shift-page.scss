@@ -1,0 +1,18 @@
+.post-shift-page{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+
+    &__heading{
+        margin: 0;
+        font-weight: 400;
+        color: #003e19;
+        border-bottom: 1px solid #003e19;
+        width: 90%;
+        text-align: center;
+        padding-bottom: 8px;
+    }
+
+}

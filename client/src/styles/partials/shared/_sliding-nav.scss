@@ -1,0 +1,15 @@
+.sliding-nav{
+    height: calc(100vh - 62px);
+    transition: 0.4s ease;
+    background-color: rgba(#000000, 0.8);
+    background-color: rgba(#028C6A, 0.9);
+    z-index: 33;
+    width: 100%;
+    position: relative;
+
+    &--closed{
+        height: 0;
+        overflow: hidden;
+        transition: 0.4s ease;
+    }
+}

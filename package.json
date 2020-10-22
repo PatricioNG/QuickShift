@@ -1,0 +1,30 @@
+{
+  "name": "quickshift",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i && cd client && npm i && npm run build && cd ../server && npm i",
+    "server": "node server --prefix server",
+    "devServer": "nodemon graphql/graphqlserver --prefix server",
+    "client": "npm start --prefix client",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "devStart": "concurrently \"npm run devServer\" \"npm run client\"",
+    "dbInit": "cd server/&& npm run createTables && knex seed:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatricioNG/QuickShift.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatricioNG/QuickShift/issues"
+  },
+  "homepage": "https://github.com/PatricioNG/QuickShift#readme",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "knex": "^0.21.5"
+  }
+}
